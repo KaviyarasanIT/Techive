@@ -5,6 +5,7 @@ const express = require("express");
 const StudentRouter=require("../backend/Router/StudentRouter")
 const app = express();
 app.use(bodyParser.json());
+
 app.use(cors());
 app.use(StudentRouter);
 mongoose.connect('mongodb://127.0.0.1:27017/mybikes')
